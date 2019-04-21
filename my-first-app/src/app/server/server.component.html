@@ -1,0 +1,7 @@
+
+<div [ngClass]="{divOnline:true}">
+    <h3 
+        [ngStyle]="{color : getServerStatusColor()}"
+        [ngClass]="{online: serverStatus === 'Online'}">{{'Server'}} with ID {{ serverID }} is {{ getServerStatus() }}
+    </h3>
+</div>
